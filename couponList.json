@@ -1,89 +1,135 @@
-[
-  {
-    "img": "cardelm2",
-    "title": "饿了么商家红包",
-    "text": "已有9999+人领取过",
-    "maxMoney": "商家小满减包",
-    "background": "linear-gradient(316deg, #FFFFFF 59%, #E3FFFA 100%)",
-    "textcolor": "#EAF2FF",
-    "textbgcolor": "#0085FF",
-    "type": "2",
-    "link": "commercialize/pages/taoke-guide/index?scene=87ea2d9d9b0b414bb72611e0f19d7f9cå"
-  },
-  {
-    "img": "cardelm4",
-    "title": "饿了么8元红包",
-    "text": "已有9999+人领取过",
-    "maxMoney": "最高可领9元",
-    "background": "linear-gradient(316deg, #FFFFFF 59%, #FFE3E3 100%)",
-    "textcolor": "#FF6A6A",
-    "textbgcolor": "#FFEBEB",
-    "type": "2",
-    "link": "ad-bdlm-sub/pages/wh-coupon-guide/index?scene=a23c48d1369a4c3397af0c83d88579f8"
-  },
-  {
-    "img": "cardmt2",
-    "title": "美团商家红包",
-    "text": "已有9999+人领取过",
-    "maxMoney": "商家小满减包",
-    "textcolor": "#FF6A6A",
-    "textbgcolor": "#FFEBEB",
-    "type": "3",
-    "link": "/waimai/pages/web-view/web-view?type=REDIRECT&webviewUrl=https%3A%2F%2Foffsiteact.meituan.com%2Fact%2Fcps%2Fpromotion%3Fp%3D67db70a552574169a8c133da08071b58&utm_content=224ac1afd8674632ae7b85226f192d82__33df8e4ecc1f4696ba2cf32242e44ee4"
-  },
-  {
-    "img": "cardelm3",
-    "title": "饿了么18.8暴涨",
-    "text": "已有9999+人领取过",
-    "maxMoney": "已更新别错过",
-    "background": "linear-gradient(316deg, #FFFFFF 59%, #E3FFFA 100%)",
-    "textcolor": "#7BB50B",
-    "textbgcolor": "#EEFFE4",
-    "type": "2",
-    "link": "pages/sharePid/web/index?o2i_sharefrom=wxminiapp&scene=u.ele.me%2FQE6SDUEy"
-  },
-  {
-    "img": "cardelm1",
-    "title": "淘宝闪购红包",
-    "text": "已有9999+人领取过",
-    "maxMoney": "领最高15元大额红包",
-    "background": "linear-gradient(316deg, #FFFFFF 59%, #F4D6FF 100%)",
-    "textcolor": "#FF6A6A",
-    "textbgcolor": "#FFEBEB",
-    "type": "5",
-    "link": "/index/pages/h5/h5?f_userId=1&f_token=1&s_cps=1&weburl=https%3A%2F%2Fdpurl.cn%2FgFptnjDz"
-  },
-  {
-    "img": "cardmt1",
-    "title": "美团外卖大额红包",
-    "text": "已有9999+人领取过",
-    "maxMoney": "每周三必得18元",
-    "background": "linear-gradient(316deg, #FFFFFF 59%, #F4D6FF 100%)",
-    "textcolor": "#FF6A6A",
-    "textbgcolor": "#FFEBEB",
-    "type": "3",
-    "link": "/index/pages/h5/h5?weburl=https%3A%2F%2Fclick.meituan.com%2Ft%3Ft%3D1%26c%3D2%26p%3DVOT5_L5zT7Zs"
-  },
-  {
-    "img": "jd2",
-    "title": "京东专属红包",
-    "text": "已有9999+人领取过",
-    "maxMoney": "最高可领50元",
-    "background": "linear-gradient(316deg, #FFFFFF 59%, #E3F2FF 100%)",
-    "textcolor": "#EAF2FF",
-    "textbgcolor": "#E1251B",
-    "type": "1",
-    "link": "https://eleme.tuikemima.net/#/pages/tbsgdj/tbsgdj?uid=88660&childId=1001"
-  },
-  {
-    "img": "jd1",
-    "title": "京东专属红包",
-    "text": "已有9999+人领取过",
-    "maxMoney": "最高可领50元",
-    "background": "linear-gradient(316deg, #FFFFFF 59%, #E3F2FF 100%)",
-    "textcolor": "#EAF2FF",
-    "textbgcolor": "#E1251B",
-    "type": "6",
-    "link": "pages/union/proxy/proxy?spreadUrl=https%3A%2F%2Fu.jd.com%2FWOe24Bk"
+{
+  "couponList": [
+    {
+      "img": "cardelm2",
+      "title": "饿了么商家红包",
+      "text": "已有9999+人领取过",
+      "maxMoney": "商家小满减包",
+      "background": "linear-gradient(316deg, #FFFFFF 59%, #E3FFFA 100%)",
+      "textcolor": "#EAF2FF",
+      "textbgcolor": "#0085FF",
+      "type": "2",
+      "link": "commercialize/pages/taoke-guide/index?scene=87ea2d9d9b0b414bb72611e0f19d7f9cå",
+      "sort": 2 // 排序数值，越小越靠前
+    },
+    {
+      "img": "cardelm4",
+      "title": "饿了么8元红包",
+      "text": "已有9999+人领取过",
+      "maxMoney": "最高可领9元",
+      "background": "linear-gradient(316deg, #FFFFFF 59%, #FFE3E3 100%)",
+      "textcolor": "#FF6A6A",
+      "textbgcolor": "#FFEBEB",
+      "type": "2",
+      "link": "ad-bdlm-sub/pages/wh-coupon-guide/index?scene=a23c48d1369a4c3397af0c83d88579f8",
+      "sort": 3
+    },
+    {
+      "img": "cardmt2",
+      "title": "美团商家红包",
+      "text": "已有9999+人领取过",
+      "maxMoney": "商家小满减包",
+      "textcolor": "#FF6A6A",
+      "textbgcolor": "#FFEBEB",
+      "type": "3",
+      "link": "/waimai/pages/web-view/web-view?type=REDIRECT&webviewUrl=https%3A%2F%2Foffsiteact.meituan.com%2Fact%2Fcps%2Fpromotion%3Fp%3D67db70a552574169a8c133da08071b58&utm_content=224ac1afd8674632ae7b85226f192d82__33df8e4ecc1f4696ba2cf32242e44ee4",
+      "sort": 5
+    },
+    {
+      "img": "cardelm3",
+      "title": "饿了么18.8暴涨",
+      "text": "已有9999+人领取过",
+      "maxMoney": "已更新别错过",
+      "background": "linear-gradient(316deg, #FFFFFF 59%, #E3FFFA 100%)",
+      "textcolor": "#7BB50B",
+      "textbgcolor": "#EEFFE4",
+      "type": "2",
+      "link": "pages/sharePid/web/index?o2i_sharefrom=wxminiapp&scene=u.ele.me%2FQE6SDUEy",
+      "sort": 1 // 排序第一，最靠前
+    },
+    {
+      "img": "cardelm1",
+      "title": "淘宝闪购红包",
+      "text": "已有9999+人领取过",
+      "maxMoney": "领最高15元大额红包",
+      "background": "linear-gradient(316deg, #FFFFFF 59%, #F4D6FF 100%)",
+      "textcolor": "#FF6A6A",
+      "textbgcolor": "#FFEBEB",
+      "type": "5",
+      "link": "/index/pages/h5/h5?f_userId=1&f_token=1&s_cps=1&weburl=https%3A%2F%2Fdpurl.cn%2FgFptnjDz",
+      "sort": 7
+    },
+    {
+      "img": "cardmt1",
+      "title": "美团外卖大额红包",
+      "text": "已有9999+人领取过",
+      "maxMoney": "每周三必得18元",
+      "background": "linear-gradient(316deg, #FFFFFF 59%, #F4D6FF 100%)",
+      "textcolor": "#FF6A6A",
+      "textbgcolor": "#FFEBEB",
+      "type": "3",
+      "link": "/index/pages/h5/h5?weburl=https%3A%2F%2Fclick.meituan.com%2Ft%3Ft%3D1%26c%3D2%26p%3DVOT5_L5zT7Zs",
+      "sort": 4
+    },
+    {
+      "img": "jd2",
+      "title": "京东专属红包",
+      "text": "已有9999+人领取过",
+      "maxMoney": "最高可领50元",
+      "background": "linear-gradient(316deg, #FFFFFF 59%, #E3F2FF 100%)",
+      "textcolor": "#EAF2FF",
+      "textbgcolor": "#E1251B",
+      "type": "1",
+      "link": "https://eleme.tuikemima.net/#/pages/tbsgdj/tbsgdj?uid=88660&childId=1001",
+      "sort": 8
+    },
+    {
+      "img": "jd1",
+      "title": "京东专属红包",
+      "text": "已有9999+人领取过",
+      "maxMoney": "最高可领50元",
+      "background": "linear-gradient(316deg, #FFFFFF 59%, #E3F2FF 100%)",
+      "textcolor": "#EAF2FF",
+      "textbgcolor": "#E1251B",
+      "type": "6",
+      "link": "pages/union/proxy/proxy?spreadUrl=https%3A%2F%2Fu.jd.com%2FWOe24Bk",
+      "sort": 6
+    }
+  ],
+  "textConfig": {
+    "start": 0, // 0：固定fixedText通知，1：随机通知
+    "fixedText": "🔥 限时红包加码！满50减20，点击领取立享优惠～",
+    "randomTexts": [
+      "吃，永远是件幸福的事 胃的饱稳，带来心的安逸。",
+      "不管什么时候 ，都要记得好好吃饭！",
+      "再累再忙，也要记得好好吃饭！",
+      "人生漫长转瞬即逝，有人见尘埃，有人见星辰。",
+      "食材可以简单，生活不能简单，爱自己，好好吃饭！",
+      "愿各位朋友，挣钱有道花钱得到，月月有余！",
+      "曾经沧海难为水，鱼香肉丝配鸡腿。",
+      "美食能治愈人心。每天都要开开心心的！",
+      "肚子胖胖，生活旺旺。",
+      "奶茶加火锅，周二变周末。",
+      "好吃的东西要吃进肚子里，可爱的人要放在心里。",
+      "只有不停地追求目标，才能走向人生巅峰。",
+      "不要因为一时的困难而放弃自己的目标。",
+      "未来是什么样子，谁也不敢保证。唯有每天不断的坚持努力，以不变应万变。",
+      "人生最迷惘的阶段就是，未曾老去，却不再年轻。",
+      "对自己好点，因为一辈子不长；对身边的人好点，因为下辈子不一定能遇见。",
+      "A merry heart goes all the way.",
+      "love isn’t complicated, people are.",
+      "Time is we do not come loose.",
+      "加油，陌生人！",
+      "希望未来奔向你的是无尽的浪漫与温柔。",
+      "一粥一饭，当思来之不易。好好吃饭，不要浪费一粒粮食！",
+      "热爱可抵岁月漫长，温柔可挡艰难时光。",
+      "迷茫时，坚定地对自己说，当时的梦想，我还记得。",
+      "人生天地之间，若白驹过隙，忽然而已。",
+      "黑夜无论怎样悠长，白昼总会到来。",
+      "错过了落日余晖，还可以静待满天繁星。",
+      "别人都祝你快乐，我祝你遍历山河，仍觉人间值得。",
+      "皓月清凉，你是人间曙光。",
+      "黑暗笼罩着整个世界，但理想却光芒四射，无比灿烂。"
+    ]
   }
-]
+}
