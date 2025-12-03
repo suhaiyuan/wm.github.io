@@ -3,59 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>跳转中...</title>
+  <title>请复制链接打开</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       height: 100vh;
+      background: #f5f5f5;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #f5f5f5;
+      padding: 20px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    .loading {
-      width: 40px;
-      height: 40px;
-      border: 4px solid #eee;
-      border-top-color: #ff3d00;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-bottom: 16px;
+    .container {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
     }
-    .text {
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      background: url("https://img.icons8.com/fluency/96/000000/link.png") no-repeat center;
+      background-size: contain;
+    }
+    .tip {
       font-size: 16px;
       color: #333;
+      margin-bottom: 20px;
+      line-height: 24px;
     }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
+    .link-box {
+      width: 100%;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      word-break: break-all;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .copy-btn {
+      width: 100%;
+      padding: 12px 0;
+      background: #ff3d00;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .copy-btn:active {
+      opacity: 0.7;
+    }
+    .success-tip {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #008000;
+      display: none;
     }
   </style>
 </head>
 <body>
-  <div class="loading"></div>
-  <div class="text">跳转中，请稍候...</div>
+  <div class="container">
+    <div class="icon"></div>
+    <div class="tip">该页面无法直接打开，请复制链接到浏览器访问</div>
+    <div class="link-box" id="linkBox"></div>
+    <button class="copy-btn" onclick="copyLink()">复制链接</button>
+    <div class="success-tip" id="successTip">链接已复制，快去浏览器打开吧~</div>
+  </div>
 
   <script>
-    // 提取小程序传递的第三方H5链接
+    // 提取并解码第三方链接（从小程序传递的参数中获取）
     const urlParams = new URLSearchParams(window.location.search);
     const targetUrl = urlParams.get('target');
+    const linkBox = document.getElementById('linkBox');
+    const successTip = document.getElementById('successTip');
 
-    // 自动跳转（延迟500ms，避免跳转太快导致的问题）
     if (targetUrl) {
-      setTimeout(() => {
-        try {
-          const decodeUrl = decodeURIComponent(targetUrl);
-          window.location.href = decodeUrl;
-        } catch (err) {
-          document.querySelector('.text').textContent = '跳转失败，请返回重试';
-          console.error('跳转失败：', err);
-        }
-      }, 500);
+      const decodeUrl = decodeURIComponent(targetUrl); // 解码得到原始第三方链接
+      linkBox.innerText = decodeUrl; // 显示链接给用户看
+      window.targetLink = decodeUrl; // 存到全局变量，方便复制
     } else {
-      document.querySelector('.text').textContent = '链接无效，请返回';
+      linkBox.innerText = '链接无效';
+    }
+
+    // 复制链接到剪贴板的核心函数
+    function copyLink() {
+      if (!window.targetLink) return;
+      // 调用浏览器的剪贴板API复制链接
+      navigator.clipboard.writeText(window.targetLink).then(() => {
+        successTip.style.display = 'block'; // 显示复制成功提示
+      }).catch(() => {
+        alert('复制失败，请手动复制链接'); // 兼容部分旧浏览器
+      });
     }
   </script>
 </body>
