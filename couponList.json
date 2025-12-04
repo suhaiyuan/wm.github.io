@@ -39,6 +39,7 @@
       "img": "cardelm1",
       "title": "淘宝闪购15元红包",
       "text": "已有9999+人领取过",
+      "maxMoney": "领最高15元大额红包",
       "background": "linear-gradient(316deg, #FFFFFF 59%, #E3FFFA 100%)",
       "textcolor": "#7BB50B",
       "textbgcolor": "#EEFFE4",
@@ -50,7 +51,7 @@
       "img": "cardelm2",
       "title": "淘宝闪购叠加包",
       "text": "已有9999+人领取过",
-      "maxMoney": "领最高15元大额红包",
+      "maxMoney": "叠加使用更优惠",
       "background": "linear-gradient(316deg, #FFFFFF 59%, #F4D6FF 100%)",
       "textcolor": "#FF6A6A",
       "textbgcolor": "#FFEBEB",
@@ -120,5 +121,6 @@
     ]
   }
 }
+
 
 
