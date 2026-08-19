@@ -2,6 +2,19 @@
   "couponList": [
     {
       "img": "cardmt1",
+      "title": "七夕鲜花大额红包",
+      "text": "已有9999+人领取过",
+      "maxMoney": "七夕福利专属",
+      "background": "linear-gradient(316deg, #FFFFFF 59%, #F4D6FF 100%)",
+      "textcolor": "#FF6A6A",
+      "textbgcolor": "#FFEBEB",
+      "type": "3",
+      "link": "/index/pages/h5/h5?weburl=https%3A%2F%2Fclick.meituan.com%2Ft%3Ft%3D1%26c%3D2%26p%3DnrAXc71zR5_O&f_token=0&f_userId=0&f_openId=0&f_openIdCipher=0&f_pos=1&f_ci=1&app_version=1",
+      "sort": 11,
+      "showHot": 1
+    },
+    {
+      "img": "cardmt1",
       "title": "美团外卖大额红包",
       "text": "已有9999+人领取过",
       "maxMoney": "每周三必得18元",
